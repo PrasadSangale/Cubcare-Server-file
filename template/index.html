@@ -1,0 +1,302 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock title %}
+
+
+
+
+{% block body %}
+
+
+
+ <style>
+    #div1 {
+  width:30%;
+  float:left;
+}
+
+  #div2{
+    
+    width:8%;
+    float:right;
+  }
+
+  #div3{
+  
+    width:8%;
+    float:right;
+  }
+
+  .container {
+    display: flex;
+    text-align: center;
+    justify-content: space between;
+    flex-wrap: wrap;
+
+  }
+  
+  .column {
+    display: inline block;
+    padding: 1.5em;
+    display: block;
+    width: 33.33%;
+    box-sizing: border-box;
+   
+  }
+  
+
+  .column img {
+    display: block;
+ 
+    width: 100%;
+   
+    height: 100%;
+    
+    object-fit: cover;
+
+  }
+ </style>
+
+
+
+
+<div id = "div1"><h1>Welcome to CubCare</h1></div>
+<div id = "div2"><button onclick="location.href = '/login'">Login</button></div>
+<div id = "div3"><button onclick="location.href = '/register'">Register</button></div>
+
+
+
+
+<div class="container-fluid px-0">
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img height=50% src ="/static/images/husky.jfif" class="d-block h-100 w-100" >
+      </div>
+      <div class="carousel-item">
+        <img height=50% src="/static/images/gsd.jpg" class="d-block h-100 w-100">
+      </div>
+      <div class="carousel-item">
+        <img height=50% src="/static/images/dobie.jpg" class="d-block h-100 w-100">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+<br>
+
+  {% comment %} <div class="row row-cols-1 row-cols-2 row-cols-3"> {% endcomment %}
+
+  {% comment %} <div id = "div4">
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="/static/images/vet.jpg" class="d-block w-100" alt="...">
+        <div class="card-body">
+          <p class="card-text">vet<p>
+          <div class="d-flex-container justify-content-between align-items-center">
+            <div class="btn-group">
+              <button onclick="location.href = '/services'">View</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> {% endcomment %}
+
+  {% comment %} was active
+  <div class="row row-cols-1 row-cols-2 row-cols-3">
+
+  <div class="row">
+    <div class=".cols">
+      <img src="/static/images/vet.jpg" alt="Snow" style="width:90%" >
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class=".cols">
+      <img src="/static/images/dog_info.jfif" alt="Mountains" style="width:100%" >
+    </div>
+  </div>
+
+  <div class="row">
+    <div class=".cols">
+      <img src="/static/images/trainer.jpg" alt="Forest" style="width:100%" >
+    </div>
+  </div>
+
+
+<br>
+was active {% endcomment %}
+
+
+
+{% comment %} 
+<div class="row row-cols-1 row-cols-2 row-cols-3">
+
+    <div class="row">
+      <div class=".cols">
+        <img src="/static/images/park.jfif" alt="abc" style="width:300%">
+      </div>
+    </div>
+
+      <div class="row">
+      <div class=".cols">
+        <img src="/static/images/doginfo.jfif" alt="def" style="width:300%">
+      </div>
+    </div>
+
+      <div class="row">
+      <div class=".cols">
+        <img src="/static/images/shop.jfif" alt="ghi" style="width:300%">
+      </div>
+    </div>
+    </div>
+   {% endcomment %}
+
+
+   
+
+
+{% comment %}   
+as active
+   <div class="row1 row1-cols-1 row1-cols-2 row1-cols-3">
+
+    <div class="row1">
+      <div class=".cols">
+        <img src="/static/images/park.jfif" alt="Snow" style="width:100%" >
+      </div>
+    </div>
+  
+  
+    <div class="row1">
+      <div class=".cols">
+        <img src="/static/images/dog_info.jfif" alt="Mountains" style="width:100%" >
+      </div>
+    </div>
+  
+    <div class="row1">
+      <div class=".cols">
+        <img src="/static/images/shop.jfif" alt="Forest" style="width:100%" >
+      </div>
+    </div>
+  was active {% endcomment %}
+
+   
+   {% comment %} <div id = "div5">
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="/static/images/trainer.jpg" class="d-block w-100 " alt="...">
+        <div class="card-body">
+          <p class="card-text">trainer<p>
+          <div class="d-flex-container justify-content-between align-items-center">
+            <div class="btn-group">
+             <button onclick="location.href = '/services'">View</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id = "div6">
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="/static/images/dog_info.jfif" class="d-block w-100 " alt="...">
+        <div class="card-body">
+          <p class="card-text">Dog info<p>
+          <div class="d-flex-container justify-content-between align-items-center">
+            <div class="btn-group">
+             <button onclick="location.href = '/services'">View</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> {% endcomment %}
+    
+{% comment %}     
+  <div id = "div7">
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="/static/images/park.jfif" class="d-block w-100 " alt="...">
+
+        <div class="card-body">
+          <p class="card-text">places</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <button onclick="location.href = '/services'">View</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div id = "div8">
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="/static/images/doginfo.jfif" class="d-block w-100" alt="...">
+        <div class="card-body">
+          <p class="card-text">dog info</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <button onclick="location.href = '/services'">View</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div id = "div9">
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="/static/images/shop.jfif" class="d-block w-100" alt="...">
+        <div class="card-body">
+          <p class="card-text">products</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <button onclick="location.href = '/services'">View</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> {% endcomment %}
+
+  <div class = "container">
+    <div class="column"><img src="/static/images/vet.jpg" alt = "photo of title and logo" width="600" height="300">
+      <b><p>VETERIAN</p></b></div>
+    <div class="column"><img src="/static/images/trainer.jpg"  alt = "photo of wortherspoons" width="600" height="300">
+      <b><p>HIRE A TRAINER</p></b></div>
+    <div class="column"><img src="/static/images/dog_info.jfif"  alt = "photo of title and logo "width="600" height="300">
+      <b><p>DOG GALLERY</p></b></div>
+    <div class="column"><img src="/static/images/shop.jfif"  alt = "photo of title and logo" width="600" height="300">
+      <b><p>SHOPPING</p></b></div>
+    <div class="column"><img src="/static/images/doginfo.jfif"  alt = "photo of title and logo "width="600" height="300">
+      <b><p>INFORMATION ON DOG BREEDS</p>    </b></div>
+    <div class="column"><img src="/static/images/park.jfif"  alt = "photo of wortherspoons" width="600" height="300">
+      <b><p>PARKS FOR DOGS</p></b></div>
+  </div> 
+
+    {% endblock body %}
